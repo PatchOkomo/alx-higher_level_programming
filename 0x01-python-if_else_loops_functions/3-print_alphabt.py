@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for alph in range(97, 123):
-    if chr(alph) is not 'q' and chr(alph) is not 'e':
-        print("{}".format(chr(alph)), end="")
+for alph in range(ord('a'), ord('z')+1):
+    if alph is not (ord('q')) and alph is not (ord('e')):
+        print('{}'.format(chr(alph)), end='')
