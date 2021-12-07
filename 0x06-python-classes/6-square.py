@@ -94,4 +94,5 @@ class Square:
             print("")
         else:
             print("\n" * self.__position[1], end="")
-            print("\n".join([" " * self.__position[0] + "#" * self.__size for r in range(self.__size)]))
+            print("\n".join([" " * self.__position[0] +
+                             "#" * self.__size for r in range(self.__size)]))
