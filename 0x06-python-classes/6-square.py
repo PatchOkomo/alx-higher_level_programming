@@ -27,14 +27,11 @@ class Square:
         Initialize a square with attribute size
 
         Attribute(s):
-        __size (int): The length of the side of the square. Default = 0
+            size (int): The length of the side of the square. Default = 0
+            position (int): tuple of two positive integers
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -93,4 +90,8 @@ class Square:
         """
         Prints square using #
         """
-        print("\n".join(["#" * self.__size for r in range(self.__size)]))
+        if self.__size == 0:
+            print("")
+        else:
+            print("\n" * self.__position[1], end="")
+            print("\n".join([" " * self.__position[0] + "#" * self.__size for r in range(self.__size)]))
