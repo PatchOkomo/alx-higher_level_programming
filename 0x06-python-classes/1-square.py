@@ -7,7 +7,7 @@ class Square:
     def __init__(self, size):
         """
         Initialize a square with attribute size
-        
+
         Args:
         size (int): The length of the side of the square
         """
