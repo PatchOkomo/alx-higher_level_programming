@@ -96,6 +96,7 @@ class Square:
             print("\n" * self.__position[1], end="")
             print("\n".join([" " * self.__position[0] +
                              "#" * self.__size for r in range(self.__size)]))
+
     def __str__(self):
         """
         String representation of square so call to print works
