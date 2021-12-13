@@ -4,8 +4,10 @@
 
 class Rectangle:
     """Represents a rectangle
+
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
+
     Functions:
         __init__(self, width, height)
         width(self)
